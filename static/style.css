@@ -1,37 +1,40 @@
-body{
+body {
     margin: 0;
 }
 
-.headerPart{
+.headerPart {
     padding: 5px 0 0;
 }
 
-.headerContainer{
+.headerContainer {
     width: 90%;
     min-width: 650px;
     margin: auto;
-    display: flex; 
-    justify-content: space-between; 
+    display: flex;
+    justify-content: flex-start; 
     align-items: center;
 }
 
+.nav-group {
+    display: flex; 
+    align-items: center; 
+}
 
 .home-button {
-    margin-right: 20px; /* Отступ от заголовка */
+    margin-right: 60px; 
 }
 
 .home-icon {
-    width: 80px; /* Ширина изображения */
-    height: 80px; /* Высота изображения */
+    width: 80px; 
+    height: 80px; 
 }
 
 .link {
-    font-size: 1.5rem; 
-    text-decoration: none; 
-    margin-left: 20px; 
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
-header{
+header {
     background-color: #5d5c61;
     border: 3px solid black;
 }
