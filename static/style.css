@@ -1,5 +1,7 @@
 body {
     margin: 0;
+    background-color: #f2f3f4;
+    font-family: "Rubik", sans-serif;;
 }
 
 .headerPart {
@@ -13,11 +15,6 @@ body {
     display: flex;
     justify-content: flex-start; 
     align-items: center;
-}
-
-.nav-group {
-    display: flex; 
-    align-items: center; 
 }
 
 .home-button {
@@ -35,6 +32,24 @@ body {
 }
 
 header {
-    background-color: #5d5c61;
-    border: 3px solid black;
+    background-color: #2d5f5d;
+    /* border: 3px solid black; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.aboutMe{
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+.divHeader{
+    padding-left: 7%;
+}
+
+.article{
+    padding-left: 5%;
+    font-size: 1.2rem;
+    text-indent: 2em;
+    line-height: 1.3;
+    padding-bottom: 2rem;
 }

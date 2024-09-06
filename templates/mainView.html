@@ -5,20 +5,40 @@
     <link rel="stylesheet" href="/static/style.css">
     <meta charset="utf-8">
     <title>Web-Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="headerPart">
         <div class="headerContainer">
-            <div class="nav-group">
-                <a class="home-button" href="/portfolio">
-                    <img src="static/home-icon.png" alt="Домой" class="home-icon">
-                </a>
-                <nav>
-                    <a class="link">Список работ</a>
-                </nav>
-            </div>
+            <a class="home-button" href="/portfolio">
+                <img src="static/home-icon.png" alt="Домой" class="home-icon">
+            </a>
+            <nav>
+                <a class="link">Список работ</a>
+            </nav>
         </div>
     </header>
+
+    <div class="aboutMe">
+        <h1 class="divHeader">Обо мне</h1>
+        <p class="article">Меня зовут Анатолий, мне 18. Сейчас нахожусь на 4, заключительном, курсе СПО на специальности "Информационные системы и программирование". <br>
+        Из языков известны основы c++, python, golang, знаком с устройством реляционных баз данных, имеются основы работы с SQL запросами, уровень английского языка B2.
+        Сейчас стараюсь создавать небольшие pet-проекты на языке golang и лучше его изучать. В дальнейшем в планах начать изучать основы мобильной разработки на Java, да и просто ознакомиться с данным языком. Мой github - Thomas3246. <br>
+        Мне интересна back-end разработка, написание логики и решение различных задач, над которыми надо хоть немного, да подумать. 
+        Имеется рвение изучать что-то новое, а самое главное - быть полезным и в чем-то преуспеть. В моих интересах изучение новых технологий, языков и конечно получение опыта работы на практике</p>
+    </div>
+
+    <div class="projects">
+        <h1 class="divHeader">Мои проекты</h1>
+
+        <!-- Сделать новый html для проекта и сделать handler для него -->
+        <!-- Сделать range вставку проектов -->
+        <!-- Сделать обработку нажатия на проект с переходом на ссылку "portfolio/{{projectName}}" -->
+
+    </div>
 </body>
 </html>

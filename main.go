@@ -18,6 +18,7 @@ func main() {
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
 
 	http.HandleFunc("/portfolio", handle.PortfolioHandler)
+	http.HandleFunc("/protfolio/converter", handle.ProjectConverterHandler)
 
 	err := http.ListenAndServe("localhost:8080", nil)
 	service.Check(err)
