@@ -53,3 +53,40 @@ header {
     line-height: 1.3;
     padding-bottom: 2rem;
 }
+
+.project{
+    padding-top: 2%;
+    padding-right: 5%;
+}
+
+.projectDescr{
+    padding-left: 5%;
+    font-size: 1.2rem;
+    text-indent: 2em;
+    line-height: 1.3;
+    padding-bottom: 0.5rem;
+}
+
+.projectDescr li {
+    margin-left: 3%;
+}
+
+.imgGUI{
+    display: flex;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 1.5rem;
+    padding-left: 25%;
+    padding-right: 30%;
+}
+
+.imgGUI img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain; 
+}
+
+.githubLink{
+    text-decoration: none;
+    color: #198754;
+}

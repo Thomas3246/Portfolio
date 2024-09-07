@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+    <meta charset="utf-8">
+    <title>Web-Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <script src="../script.js"></script>
+</head>
+
+<body>
+    <header class="headerPart">
+        <div class="headerContainer">
+            <a class="home-button" href="/portfolio">
+                <img src="../static/home-icon.png" alt="Домой" class="home-icon">
+            </a>
+            <nav>
+                <a class="link">Список работ</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="project">
+        <h1 class="divHeader">Конвертер валют</h1>
+
+        <p class="projectDescr">
+            Ссылка на гитхаб проекта: <a class="githubLink" href="https://github.com/Thomas3246/converter" target="_blank">github.com/Thomas3246/converter</a>
+        </p>
+
+        <p class="projectDescr">
+            Конвертер валют - web-приложение, написанное на GoLang. Графический интерфейс конвертера валют показан на изображении ниже. 
+        </p>
+        <p class="imgGUI">
+            <img src="../static/converter/GUI.png" alt="GUI">
+        </p>
+
+        <p class="projectDescr">
+            Handle функция экрана GUI при выполнении HTML файла передает ему значение, полученное при конвертации, которое располагается под кнопкой "Calculate".
+            Значение выводится на экран только в том случае, если оно не пустое. 
+            Поэтому при запуске сервиса или при попытке расчета с пустым полем ввода ничего не выводится.<br>
+            На выбор для конвертации предоставлено 6 валют: </p>
+            <ul class="projectDescr">
+                <li>Доллары США</li>
+                <li>Рубли РФ</li>
+                <li>Евро Еврозоны</li>
+                <li>Фунты стерлинга Великобритании</li>
+                <li>Японские Йены</li>
+                <li>Китайские Юани</li>
+            </ul>
+        <p class="projectDescr">
+            На вход программа получает численное значение размером до 10000. После выбора необходимых валют и нажатия на кнопку "Calculate", программа 
+            открывает handler функцию, производящую все расчеты. Функция считывает вписанное значение, а также выбранные валюты. После этого отправляет запрос
+            к API сервису CURRENCYAPI посредством перехода по ссылке, состоящей из API ключа и необходимых для конвертации валют. От сервиса программа
+            получает JSON ответ, состоящий из времени обновления курса, валют для конвертации и самого значения курса. После записи полученных данных в переменную,
+            ответ округляется до 2 знаков после запятой и происходит перенаправление обратно к handle функции GUI.<br>
+            При этом запоминаются выбранные валюты и при всех расчетах и обновлении страницы, все остаётся на своих местах. </p>
+        <p class="projectDescr">
+            Скриншот полученного результата представлен ниже.
+        </p>
+        <p class="imgGUI">
+            <img src="../static/converter/GUI-Result.png" alt="GUI-Result">
+        </p>
+
+    </div>
+
+    <a href="#" class="scrollup">Наверх</a>
+
+</body>
