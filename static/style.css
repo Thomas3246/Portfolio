@@ -29,6 +29,7 @@ body {
 .link {
     font-size: 1.5rem;
     text-decoration: none;
+    margin-right: 4rem;
 }
 
 header {
@@ -43,7 +44,7 @@ header {
 }
 
 .divHeader{
-    padding-left: 7%;
+    padding-left: 10%;
 }
 
 .article{
@@ -89,4 +90,50 @@ header {
 .githubLink{
     text-decoration: none;
     color: #198754;
+}
+
+.scrollup{
+    width:50px;
+    height:50px;
+    opacity:0.3;
+    position:fixed;
+    bottom:50px;
+    right:100px;
+    display:none;
+    text-indent:-9999px;
+    background: url('../static/toTop-icon.png') no-repeat;
+}
+
+.projectCard {
+    border-radius: 15px;
+    border: 1px solid #2d5f5d;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    margin-left: 5%;
+    margin-bottom: 2rem;
+}
+
+.projectCardTop{
+    font-size: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #2d5f5d;
+    color: #f2f3f4;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projectCardBot{
+    padding: 10px;
+    font-size: 1.2rem;
+    text-indent: 1.5rem;
+}
+
+.logoImage{
+    width: 100px;
+    height: 100px;
 }
